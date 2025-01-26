@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  height: 100%;
+  overflow: hidden;
+  background-image: url(https://img.freepik.com/free-vector/cute-small-love-heart-pattern-backdrop-wrapping-paper-print_1017-49855.jpg);
+  margin: 0;
+}
+
+.letter {
+  background-color: rgba(255, 255, 255, 0.834);
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  transform: translateY(100vh); /* Initial position of .letter */
+  transition: transform 1s ease; /* Smooth transition */
+  filter: drop-shadow(1px 0px 32px #000000);
+}
+
+.pull {
+  width: 60px;
+  height: 100px;
+  background-image: url(../img/rubban.png);
+  position: absolute;
+  bottom: 100%; /* Position above the .letter */
+  left: 50%; /* Position it at the center horizontally */
+  transform: translateX(-50%); /* Offset by half its width to truly center */
+}
+
+.title {
+  font-family: "Bebas Neue", serif;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%; /* Position it at the center horizontally */
+  transform: translateX(-50%);
+}
+
+.undertitle {
+  color: white;
+  font-size: 1.6rem;
+  background-color: rgba(255, 0, 89, 0.576);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.neon {
+  --neon-color: rgb(255, 0, 89);
+  font-family: "Bebas Neue", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 0.15em;
+
+  text-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color),
+    0 0 20px var(--neon-color), 0 0 40px var(--neon-color),
+    0 0 80px var(--neon-color), 0 0 90px var(--neon-color),
+    0 0 100px var(--neon-color);
+}
