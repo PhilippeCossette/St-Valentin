@@ -11,7 +11,20 @@ body {
   height: 100dvh;
   overflow: hidden;
   background-image: url(https://img.freepik.com/free-vector/cute-small-love-heart-pattern-backdrop-wrapping-paper-print_1017-49855.jpg);
+  background-repeat: repeat; /* Makes it scroll vertically */
+  background-size: auto; /* Adjust to fit screen */
+  animation: scrollBackground 15s linear infinite; /* Adjust duration for speed */
+
   margin: 0;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100vh;
+  }
 }
 
 .letter {
@@ -22,9 +35,6 @@ body {
   transform: translateY(100vh); /* Initial position of .letter */
   transition: transform 1s ease; /* Smooth transition */
   filter: drop-shadow(1px 0px 32px #000000);
-
-
-  
 }
 
 .pull {
