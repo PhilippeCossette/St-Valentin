@@ -101,8 +101,9 @@ body {
     0 0 80px var(--neon-color), 0 0 90px var(--neon-color),
     0 0 100px var(--neon-color);
 
-  transform: translate(1px, 1px); /* Slight offset to reduce pixelation */
-  -webkit-font-smoothing: antialiased;
+  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .heart {
