@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 body {
+  display: grid;
+  place-items: center;
   height: 100%;
   overflow: hidden;
   background-image: url(https://img.freepik.com/free-vector/cute-small-love-heart-pattern-backdrop-wrapping-paper-print_1017-49855.jpg);
@@ -31,9 +33,7 @@ body {
   font-family: "Bebas Neue", serif;
   text-align: center;
   position: absolute;
-  top: 30%;
-  left: 50%; /* Position it at the center horizontally */
-  transform: translateX(-50%);
+  padding: 2em;
 }
 
 .undertitle {
@@ -57,4 +57,27 @@ body {
     0 0 20px var(--neon-color), 0 0 40px var(--neon-color),
     0 0 80px var(--neon-color), 0 0 90px var(--neon-color),
     0 0 100px var(--neon-color);
+}
+
+.heart {
+  position: absolute;
+  z-index: 10;
+  transform-origin: center;
+
+  animation: loading 4s linear forwards;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(10);
+    /* opacity: 1; */
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(0);
+    /* opacity: 0; */
+    visibility: hidden;
+  }
 }
