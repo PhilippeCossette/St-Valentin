@@ -21,7 +21,7 @@ body {
   z-index: 100;
   visibility: visible; /* Ensure it's visible initially */
   animation: loading 1s linear forwards;
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 
 @keyframes loading {
