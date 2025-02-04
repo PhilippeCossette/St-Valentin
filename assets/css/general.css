@@ -15,7 +15,7 @@ body {
   background-size: auto; /* Adjust to fit screen */
   animation: scrollBackground 15s linear infinite; /* Adjust duration for speed */
 
-  margin: 0;
+  
 
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   scrollbar-width: none; /* For Firefox */
