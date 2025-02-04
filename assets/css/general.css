@@ -16,6 +16,9 @@ body {
   animation: scrollBackground 15s linear infinite; /* Adjust duration for speed */
 
   margin: 0;
+
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
 }
 
 @keyframes scrollBackground {
@@ -57,9 +60,10 @@ body {
 .undertitle {
   color: white;
   font-size: 1.6rem;
-  background-color: rgba(255, 0, 89, 0.576);
+  background-color: rgba(255, 0, 89, 0.669);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
+  z-index: 2;
 }
 
 .neon {
