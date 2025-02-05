@@ -183,19 +183,16 @@ body {
 }
 
 .neon {
-  --neon-color: rgba(255, 0, 89, 0.544);
+  color: white;
   font-family: "Bebas Neue", serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
-  /* background-color: var(--neon-color); */
-  color: white;
   padding-inline: 1em;
   border-radius: 1em;
   margin-bottom: 20px;
   transform: translate(1px, 1px); /* Slight offset to reduce pixelation */
   -webkit-font-smoothing: antialiased;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 a.button-respond {
